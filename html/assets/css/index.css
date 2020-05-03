@@ -1,0 +1,250 @@
+body{
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 0;
+  margin:0;
+}
+
+header{
+    background-image: url("../images/top.jpg");
+    height: 450px;
+    width: auto;
+}
+
+h1, h2, h3, h4, h5 navbar-nav{
+    font-family: ROLAchan !important;
+    text-align: center;
+}
+
+
+/* 大デバイス（デスクトップ, 1201px 以上） */
+@media (min-width: 1201px){
+  .logo{
+    font-size: 90px;
+  }
+}
+
+/* 大デバイス（デスクトップ, 1200px 未満） */
+@media (max-width: 1200px){
+  .logo{
+    font-size: 90px;
+  }
+}
+/* 中デバイス（タブレット, 992px 未満） */
+@media (max-width: 992px) {
+ .logo {
+   font-size: 70px;
+ }
+ header{
+  height: 400px;
+ }
+}
+/* 小デバイス（横向きモバイル, 768px 未満） */
+@media (max-width: 768px) {
+  .logo {
+  font-size: 50px;
+ }
+ header{
+  height: 300px;
+ }
+}
+/* 極小デバイス（縦向きモバイル, 576px 未満） */
+@media (max-width: 576px) {
+ .logo {
+   font-size: 40px;
+ }
+ header{
+  height: 250px;
+ }
+}
+
+/* ローディング画面 */
+#loader {
+  color:#ffa43f;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* ページトップ遷移ボタン */
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #3f98ef;
+  opacity: 0.6;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f106';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+header h1{
+    /* font-size: 85px; */
+    font-weight: bold;
+    color: #ffa43f;
+    text-align: center;
+    /* padding-top: 100px; */
+}
+
+header h1 span{
+    color: #fff;
+}
+
+.navbar-nav{
+  font-size: 30px;
+}
+
+.profile_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+  align-items: center; /* 縦方向中央揃え */
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+}
+
+.works_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+  justify-content: center; /* 横方向中央揃え */
+}
+
+.profile-img{
+  height: 300px;
+  border-radius: 50%;
+  /* flex: 1; */
+}
+
+.profile-content{
+  padding-top: 50px;
+}
+
+.skill_wrapper, .contact_wrapper{
+  display: flex;
+  -webkit-justify-content: center; /* 横方向中央揃え（Safari用） */
+ justify-content: center; /* 横方向中央揃え */
+}
+
+footer{
+  height: 50px;
+}
+
+i{
+  color: #1da1f2;
+}
+
+.portfolio_img, .works_images{
+  width: 100%;
+  height: auto;
+}
+
